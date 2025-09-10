@@ -3,15 +3,11 @@
 #include <stdlib.h>
 #include <string.h>
 int main() {
-  char *lineptr = NULL, *saveptr1 = NULL, *token = NULL;
+  char *lineptr = NULL, *saveptr1, *token;
   size_t n = 0;
   const char delim = ' ';
   printf("Please enter some text: ");
-  ssize_t lineData = getline(&lineptr, &n, stdin);
-  if (lineData == -1) {
-    perror("getline failed");
-    exit(EXIT_FAILURE);
-  }
+  getline(&lineptr, &n, stdin);
   printf("Tokens: \n");
   token = strtok_r(lineptr, &delim, &saveptr1);
   while (token) {
@@ -20,4 +16,5 @@ int main() {
   }
   free(lineptr);
   exit(EXIT_SUCCESS);
+  
 }
