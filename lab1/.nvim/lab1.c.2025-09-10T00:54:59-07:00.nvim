@@ -1,0 +1,17 @@
+#define _GNU_SOURCE
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+int main() {
+char *lineptr = NULL;
+size_t n = 0;
+FILE *stream;
+ssize_t nread;
+getline(&lineptr,&n,stream);
+
+
+
+
+
+  return 0;
+}

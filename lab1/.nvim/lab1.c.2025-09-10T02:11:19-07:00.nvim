@@ -1,0 +1,20 @@
+#define _POSIX_C_SOURCE 200809L
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main() {
+  char *lineptr = NULL, *saveptr1, *token, *subtoken;
+  size_t n = 0;
+  ssize_t nread;
+  const char delim = ' ';
+  nread = getline(&lineptr, &n, stdin);
+  // fwrite(lineptr, nread, 1, stdout);
+  token = strtok_r(lineptr, &delim, &saveptr1);
+  fwrite(lineptr, *saveptr1, 1, stdout); 
+  while(token != NULL)
+    token = strtok_r(NULL, &delim, &saveptr1);
+  fwrite(lineptr, *saveptr1, 1, stdout); 
+  free(lineptr);
+
+  return 0;
+}
