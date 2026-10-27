@@ -1,0 +1,17 @@
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+cmpt201        1  0.3  0.0  17188  9268 pts/0    Ss   21:04   0:02 zsh --login
+cmpt201     4195  0.0  0.0   2904  2228 pts/0    S+   21:12   0:00 /home/cmpt201/.local/bin/record
+cmpt201     4196  0.0  0.1 109312 23296 pts/0    Sl+  21:12   0:00 /home/cmpt201/.local/bin/record
+cmpt201     4201  0.1  0.1 108604 23428 pts/0    Sl+  21:12   0:00 /usr/bin/python3 /usr/bin/asciinema rec --idle-time-limit=60 --stdin --quiet /tmp/.record/input.0.2026-09-14T21:12:46.535318
+cmpt201     4203  0.0  0.0  34840 16080 pts/0    S+   21:12   0:00 /usr/bin/python3 /usr/bin/asciinema rec --idle-time-limit=60 --stdin --quiet /tmp/.record/input.0.2026-09-14T21:12:46.535318
+cmpt201     4204  0.0  0.1  34984 16792 pts/0    S+   21:12   0:00 /usr/bin/python3 /usr/bin/asciinema rec --idle-time-limit=60 --stdin --quiet /tmp/.record/input.0.2026-09-14T21:12:46.535318
+cmpt201     4205  0.0  0.0   2808  1976 pts/1    Ss   21:12   0:00 sh -c /usr/bin/zsh
+cmpt201     4206  0.2  0.0  18020  9784 pts/1    S    21:12   0:00 /usr/bin/zsh
+cmpt201     5272  0.6  0.1 109316 23576 pts/1    Sl+  21:17   0:00 /home/cmpt201/.local/bin/record
+cmpt201     5277  0.6  0.1 108604 23356 pts/1    Sl+  21:17   0:00 /usr/bin/python3 /usr/bin/asciinema rec --idle-time-limit=60 --stdin --quiet /tmp/.record/input.1.2026-09-14T21:17:33.962345
+cmpt201     5279  0.0  0.0  34840 15908 pts/1    S+   21:17   0:00 /usr/bin/python3 /usr/bin/asciinema rec --idle-time-limit=60 --stdin --quiet /tmp/.record/input.1.2026-09-14T21:17:33.962345
+cmpt201     5280  0.0  0.1  34852 16600 pts/1    S+   21:17   0:00 /usr/bin/python3 /usr/bin/asciinema rec --idle-time-limit=60 --stdin --quiet /tmp/.record/input.1.2026-09-14T21:17:33.962345
+cmpt201     5281  0.0  0.0   2808  1816 pts/2    Ss   21:17   0:00 sh -c /usr/bin/zsh
+cmpt201     5282  1.7  0.0  13508  7168 pts/2    S    21:17   0:00 /usr/bin/zsh
+cmpt201     5433 60.0  0.1 109300 23676 pts/2    S+   21:17   0:00 /home/cmpt201/.local/bin/record stop
+cmpt201     5436  0.0  0.0  13488  4592 pts/2    R+   21:17   0:00 ps aux
